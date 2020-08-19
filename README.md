@@ -8,3 +8,6 @@ This repository hopefully will be helpful for starting your own single-spa proje
 2. `yarn install` (or `npm install`)
 3. `yarn watch` (or `npm run watch`)
 4. Open up http://localhost:8080 in a web browser.
+
+## Note
+Please update depencies in webpack.config.js.
