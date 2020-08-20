@@ -1,4 +1,3 @@
-import 'zone.js';
 import 'reflect-metadata';
 import singleSpaAngular from 'single-spa-angular';
 import { ApplicationRef } from '@angular/core';

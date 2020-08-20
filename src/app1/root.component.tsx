@@ -6,7 +6,7 @@ export default class Root extends React.Component<any,any> {
 
     return (
         <div style={{marginTop: '100px'}}>
-          {message}
+          <custom-counter></custom-counter>
         </div>
     );
   }

@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
   template: `
     <div>
-      Subroute 2 is working!
+      <div><custom-counter></custom-counter></div>
     </div>
   `,
 })
