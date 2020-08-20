@@ -24,7 +24,7 @@ enableProdMode();
     BrowserModule,
     RouterModule.forRoot(appRoutes, {}),
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/app2/'}],
+  providers: [{provide: APP_BASE_HREF, useValue: '/angular/'}],
   declarations: [
     App2,
     Subroute1,

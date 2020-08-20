@@ -18,6 +18,59 @@ body {
     display: flex;
     align-items: center;
 }
+.icon-text{
+    position: absolute;
+    bottom: 7px;
+    left: 5px;
+    color: #bf4b27;
+    z-index: 99999;
+    font-size: 17px;
+    padding-left: 5px;
+}
+.home-img-container{
+    position: relative;
+}
+.home-details{
+    color: white;
+    position: absolute;
+    left: 45px;
+    top: 230px;
+    width: 60%;
+}
+.home-details-header{
+    font-weight: 700;
+    width: 100%;
+    float: left;
+    font-size: 36px;
+    padding: 20px 15px;
+}
+.home-pointer-container{
+    width: 100%;
+    float: left; 
+}
+.home-pointers-data{
+    font-weight: 500;
+    width: 100%;
+    float: left;
+    font-size: 26px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.home-pointers-inner-data{
+    width: 90%;
+    float: left;
+    padding: 5px 8px;
+}
+.home-pointers{
+    font-weight: 700;
+    font-size: 35px;
+    max-width: 30px;
+    float: left;
+    margin-top: -10px;
+}
+.home{
+    margin-top: 100px;
+}
 
 .navbar ul {
     display: flex;
@@ -29,6 +82,7 @@ body {
 .navbar li {
     padding-right: 24px;
     height: 100%;
+    position: relative;
 }
 
 .navbar li:hover {

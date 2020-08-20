@@ -4,6 +4,7 @@
   "description": "A simple example of how to use webpack with single-spa",
   "scripts": {
     "watch": "webpack-dev-server --open",
+    "serve":"webpack-dev-server --host 192.168.0.106 --open",
     "build": "webpack --config webpack.config.js -p"
   },
   "repository": {
