@@ -19,11 +19,23 @@ export function bootstrap(props) {
 }
 
 export function mount(props) {
-  return ngLifecycles.mount(props).then(val => {});
+  return ngLifecycles.mount(props).then(()=>{
+    var head = document.getElementsByTagName('head')[0];
+    let el = document.getElementById('frameworkPoll');
+  if (!el) {
+    el = document.createElement('script');
+    el.id = 'frameworkPoll';
+    el.src = "./src/app2/framework-poll.js";
+    head.appendChild(el);
+  }
+  });
 }
-
 export function unmount(props) {
-  return ngLifecycles.unmount(props);
+  return ngLifecycles.unmount(props).then(()=>{
+    var head = document.getElementsByTagName('head')[0];
+    let el = document.getElementById('frameworkPoll');
+    head.removeChild(el);
+  });
 }
 
 function domElementGetter() {
