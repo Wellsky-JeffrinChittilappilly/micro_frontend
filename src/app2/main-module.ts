@@ -17,14 +17,14 @@ const appRoutes: Routes = [
   },
 ];
 
-enableProdMode();
+// enableProdMode();
 
 @NgModule({
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, {}),
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/angular/'}],
+  providers: [{provide: APP_BASE_HREF, useValue: '/angular'}],
   declarations: [
     App2,
     Subroute1,
@@ -32,6 +32,7 @@ enableProdMode();
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [App2]
+
 })
 export default class MainModule {
 }

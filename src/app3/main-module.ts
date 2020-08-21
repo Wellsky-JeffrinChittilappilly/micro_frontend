@@ -7,7 +7,7 @@ import { Home } from './home.component.ts';
 const appRoutes: Routes = [
 ];
 
-enableProdMode();
+// enableProdMode();
 
 @NgModule({
   imports: [

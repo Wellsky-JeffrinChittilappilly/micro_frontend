@@ -2,14 +2,14 @@ import 'reflect-metadata';
 import singleSpaAngular from 'single-spa-angular';
 import { ApplicationRef } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import mainModule from './main-module.ts';
+import  mainModule from './main-module.ts';
 import { Router } from '@angular/router';
 
 const ngLifecycles = singleSpaAngular({
   domElementGetter,
   mainModule,
   angularPlatform: platformBrowserDynamic(),
-  template: `<home />`,
+  template: `<home/>`,
   Router,
   ApplicationRef,
 })
