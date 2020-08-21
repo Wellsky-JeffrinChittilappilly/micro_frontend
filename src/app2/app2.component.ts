@@ -5,11 +5,13 @@ import {Component} from '@angular/core';
   template: `
   <style>
       a {
-        background-color: red;
+        background-color: #5eb8b7;
         color: white;
         padding: 1em 1.5em;
         text-decoration: none;
         text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-left: 11px;
       }
 
       a:hover {
@@ -30,12 +32,11 @@ import {Component} from '@angular/core';
       }
     </style>
     <div style="margin-top: 100px;">
-      This was rendered by App2 which is written in Angular
       
     </div>
 
-    <a [routerLink]="['/subroute1']" routerLinkActive="active">Angular route 1</a>
-    <a [routerLink]="['/subroute2']" routerLinkActive="active">Angular route 2</a>
+    <a [routerLink]="['/subroute1']" routerLinkActive="active">Patient Info</a>
+    <a [routerLink]="['/subroute2']" routerLinkActive="active">Patient Vist Entry</a>
     
     <router-outlet></router-outlet>
   `,

@@ -22,19 +22,29 @@ export function mount(props) {
   return ngLifecycles.mount(props).then(()=>{
     var head = document.getElementsByTagName('head')[0];
     let el = document.getElementById('frameworkPoll');
-  if (!el) {
-    el = document.createElement('script');
-    el.id = 'frameworkPoll';
-    el.src = "./src/app2/framework-poll.js";
-    head.appendChild(el);
-  }
+    if (!el) {
+      el = document.createElement('script');
+      el.id = 'frameworkPoll';
+      el.src = "./src/app2/framework-poll.js";
+      head.appendChild(el);
+    }
+    
+    let el1 = document.getElementById('patientInfo');
+    if (!el1) {
+      el1 = document.createElement('script');
+      el1.id = 'patientInfo';
+      el1.src = "./src/app2/patient-info.js";
+      head.appendChild(el1);
+    }
   });
 }
 export function unmount(props) {
   return ngLifecycles.unmount(props).then(()=>{
     var head = document.getElementsByTagName('head')[0];
     let el = document.getElementById('frameworkPoll');
-    head.removeChild(el);
+    let el1 = document.getElementById('patientInfo');
+    el && head.removeChild(el);
+    el1 && head.removeChild(el1);
   });
 }
 
