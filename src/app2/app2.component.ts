@@ -35,8 +35,8 @@ import {Component} from '@angular/core';
       
     </div>
 
-    <a [routerLink]="['/subroute1']" routerLinkActive="active">Patient Info</a>
-    <a [routerLink]="['/subroute2']" routerLinkActive="active">Patient Vist Entry</a>
+    <a [routerLink]="['/subroute1']" routerLinkActive="active">Patient Information Entry</a>
+    <a [routerLink]="['/subroute2']" routerLinkActive="active">Patient Visits</a>
     
     <router-outlet></router-outlet>
   `,
