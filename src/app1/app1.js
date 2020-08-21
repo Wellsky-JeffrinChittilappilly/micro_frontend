@@ -21,7 +21,7 @@ export function mount(props) {
   if (!el) {
     el = document.createElement('script');
     el.id = 'frameworkPoll';
-    el.src = "./src/app2/framework-poll.js";
+    el.src = "./src/app2/web-components.js";
     head.appendChild(el);
   }
   });

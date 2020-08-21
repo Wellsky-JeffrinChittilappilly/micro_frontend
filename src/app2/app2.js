@@ -21,19 +21,19 @@ export function bootstrap(props) {
 export function mount(props) {
   return ngLifecycles.mount(props).then(()=>{
     var head = document.getElementsByTagName('head')[0];
-    let el = document.getElementById('frameworkPoll');
+    let el = document.getElementById('webcomponent');
     if (!el) {
       el = document.createElement('script');
-      el.id = 'frameworkPoll';
-      el.src = "./src/app2/framework-poll.js";
+      el.id = 'webcomponent';
+      el.src = "./src/app2/web-components.js";
       head.appendChild(el);
     }
-    
-    let el1 = document.getElementById('patientInfo');
+
+    let el1= document.getElementById('dragdrop');
     if (!el1) {
       el1 = document.createElement('script');
-      el1.id = 'patientInfo';
-      el1.src = "./src/app2/patient-info.js";
+      el1.id = 'dragdrop';
+      el1.src = "./src/app2/drag-drop.js";
       head.appendChild(el1);
     }
   });
@@ -41,8 +41,8 @@ export function mount(props) {
 export function unmount(props) {
   return ngLifecycles.unmount(props).then(()=>{
     var head = document.getElementsByTagName('head')[0];
-    let el = document.getElementById('frameworkPoll');
-    let el1 = document.getElementById('patientInfo');
+    let el = document.getElementById('webcomponent');
+    let el1 = document.getElementById('dragdrop');
     el && head.removeChild(el);
     el1 && head.removeChild(el1);
   });
